@@ -1,0 +1,58 @@
+<!--
+<header>
+    <h2>MyApp</h2>
+
+        <button><a routerLink="admin-login">Admin Login</a></button>
+
+</header>
+-->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm px-4">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold fs-3" href="#">
+      <span class="text-primary">Smart</span>Admin
+    </a>
+
+    <button id="btn" class=" navbar-brand  fw-bold fs-3">
+      <a id="btn-1" routerLink="admin-login">Admin Login</a>
+    </button>
+
+  </div>
+</nav>
+
+<section class="container py-5">
+  <div class="row align-items-center min-vh-75">
+
+    <div class="col-lg-6">
+      <h1 class="display-4 fw-bold text-dark">
+        Modern Enterprise Dashboard
+      </h1>
+
+      <p class="lead text-secondary mt-3">
+        Build scalable Angular applications with professional UI and real-time analytics.
+      </p>
+
+      <div class="mt-4">
+        <button class="btn btn-primary btn-lg px-4 me-3">
+          Get Started
+        </button>
+
+        <button class="btn btn-outline-dark btn-lg px-4">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <div class="col-lg-6 text-center">
+      <img src="assets/dashboard.png"
+           class="img-fluid"
+           width="500">
+    </div>
+
+  </div>
+</section>
+
+
+<router-outlet></router-outlet>
