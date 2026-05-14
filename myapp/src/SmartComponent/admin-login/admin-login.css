@@ -1,0 +1,50 @@
+/* PAGE */
+.login-page{
+  background: linear-gradient(to right, #fdf2f8, #ffffff);
+  min-height: calc(100vh - 140px);
+}
+
+/* LOGIN CARD */
+.login-card{
+  border-radius: 24px;
+}
+
+/* INPUT */
+.form-control{
+  border: 1px solid #e2e8f0;
+}
+
+/* INPUT FOCUS */
+.form-control:focus{
+  border-color: #ec4899;
+  box-shadow: 0 0 0 0.2rem rgba(236,72,153,0.15);
+}
+
+/* LOGIN BUTTON */
+.login-btn{
+  background-color: #ec4899;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover{
+  background-color: #db2777;
+}
+
+/* FOOTER */
+.footer{
+  background-color: #1e293b;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .login-page{
+    padding: 40px 0;
+  }
+
+  .navbar-brand{
+    font-size: 1.7rem !important;
+  }
+
+}

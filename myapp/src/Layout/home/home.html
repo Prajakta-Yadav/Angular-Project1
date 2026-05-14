@@ -1,58 +1,236 @@
-<!--
-<header>
-    <h2>MyApp</h2>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
 
-        <button><a routerLink="admin-login">Admin Login</a></button>
+  <div class="container">
 
-</header>
--->
-
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm px-4">
-  <div class="container-fluid">
+    <!-- LOGO -->
     <a class="navbar-brand fw-bold fs-3" href="#">
-      <span class="text-primary">Smart</span>Admin
+      <span style="color:#ec4899;">Pink</span>Heart
     </a>
 
-    <button id="btn" class=" navbar-brand  fw-bold fs-3">
-      <a id="btn-1" routerLink="admin-login">Admin Login</a>
+    <!-- MOBILE TOGGLER -->
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent">
+
+      <span class="navbar-toggler-icon"></span>
+
     </button>
 
+    <!-- NAVBAR CONTENT -->
+    <div class="collapse navbar-collapse justify-content-end"
+         id="navbarContent">
+
+      <button class="btn text-white px-4 rounded-pill mt-3 mt-lg-0"
+              style="background-color:#ec4899; border:none;">
+
+        <a routerLink="admin-login"
+           class="text-white text-decoration-none">
+
+          Admin Login
+
+        </a>
+
+      </button>
+
+    </div>
+
   </div>
+
 </nav>
 
-<section class="container py-5">
-  <div class="row align-items-center min-vh-75">
+<!-- HERO SECTION -->
+<section class="hero-section d-flex align-items-center">
 
-    <div class="col-lg-6">
-      <h1 class="display-4 fw-bold text-dark">
-        Modern Enterprise Dashboard
-      </h1>
+  <div class="container">
 
-      <p class="lead text-secondary mt-3">
-        Build scalable Angular applications with professional UI and real-time analytics.
-      </p>
+    <div class="row align-items-center">
 
-      <div class="mt-4">
-        <button class="btn btn-primary btn-lg px-4 me-3">
-          Get Started
-        </button>
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6 text-center text-lg-start">
 
-        <button class="btn btn-outline-dark btn-lg px-4">
-          Learn More
-        </button>
+        <h1 class="hero-title fw-bold text-dark">
+
+          Modern Healthcare <br>
+          Management System
+
+        </h1>
+
+        <p class="hero-text text-secondary mt-3">
+
+          PinkHeart helps doctors and healthcare professionals manage
+          patients, appointments and medical records efficiently.
+
+        </p>
+
+        <!-- BUTTONS -->
+        <div class="mt-4 d-flex flex-column flex-sm-row
+                    justify-content-center justify-content-lg-start">
+
+          <button class="btn hero-btn text-white px-4 py-2
+                         rounded-pill me-sm-3 mb-3 mb-sm-0">
+
+            Get Started
+
+          </button>
+
+          <button class="btn btn-outline-dark px-4 py-2 rounded-pill">
+
+            Learn More
+
+          </button>
+
+        </div>
+
       </div>
-    </div>
 
-    <div class="col-lg-6 text-center">
-      <img src="assets/dashboard.png"
-           class="img-fluid"
-           width="500">
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6 text-center mt-5 mt-lg-0">
+
+        <img src="https://img.freepik.com/free-vector/female-doctor-concept-illustration_114360-1515.jpg"
+             class="img-fluid hero-image">
+
+      </div>
+
     </div>
 
   </div>
+
 </section>
 
+<!-- FEATURES -->
+<section class="py-5 bg-white">
+
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-4">
+
+      <h2 class="fw-bold">
+        Why Choose PinkHeart?
+      </h2>
+
+      <p class="text-muted">
+        Professional healthcare dashboard with modern management tools.
+      </p>
+
+    </div>
+
+    <!-- CARDS -->
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+
+        <div class="card border-0 shadow-sm rounded-4 h-100 feature-card">
+
+          <div class="card-body text-center p-4">
+
+            <div class="mb-3">
+
+              <i class="bi bi-heart-pulse-fill fs-1"
+                 style="color:#ec4899;"></i>
+
+            </div>
+
+            <h4 class="fw-bold">
+              Patient Management
+            </h4>
+
+            <p class="text-muted mt-3">
+
+              Easily manage patient records and medical history.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+
+        <div class="card border-0 shadow-sm rounded-4 h-100 feature-card">
+
+          <div class="card-body text-center p-4">
+
+            <div class="mb-3">
+
+              <i class="bi bi-calendar-check-fill fs-1"
+                 style="color:#ec4899;"></i>
+
+            </div>
+
+            <h4 class="fw-bold">
+              Appointment Scheduling
+            </h4>
+
+            <p class="text-muted mt-3">
+
+              Track appointments and manage schedules efficiently.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-12 col-md-6 col-lg-4 mx-md-auto">
+
+        <div class="card border-0 shadow-sm rounded-4 h-100 feature-card">
+
+          <div class="card-body text-center p-4">
+
+            <div class="mb-3">
+
+              <i class="bi bi-shield-check fs-1"
+                 style="color:#ec4899;"></i>
+
+            </div>
+
+            <h4 class="fw-bold">
+              Secure Records
+            </h4>
+
+            <p class="text-muted mt-3">
+
+              Secure and reliable healthcare management platform.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-4">
+
+  <div class="container text-center">
+
+    <h5 class="fw-bold">
+      PinkHeart
+    </h5>
+
+    <p class="mb-0 text-light small">
+      © 2025 PinkHeart Healthcare Management System
+    </p>
+
+  </div>
+
+</footer>
 
 <router-outlet></router-outlet>

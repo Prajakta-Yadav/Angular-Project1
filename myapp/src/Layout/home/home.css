@@ -1,60 +1,74 @@
-/*
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
-
-
-button{
-   
-    cursor: pointer;
-    border-radius: 30px;
-    padding: 10px;
-    
-    
-    
+/* HERO SECTION */
+.hero-section{
+  background-color: #fdf2f8;
+  min-height: 90vh;
+  padding: 60px 0;
 }
 
- button:hover{
-    
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: green;
-    color: white;
-    font-weight: bold;
-
+/* HERO TITLE */
+.hero-title{
+  font-size: 3rem;
+  line-height: 1.2;
 }
 
-
-
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    
+/* HERO TEXT */
+.hero-text{
+  font-size: 1.1rem;
+  max-width: 550px;
 }
 
-*/ 
-
-#btn{
-    cursor: pointer;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: black;
-    color: white;
+/* BUTTON */
+.hero-btn{
+  background-color: #ec4899;
+  border: none;
 }
 
-#btn-1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-   
-    font-size: 20px;
-   
+.hero-btn:hover{
+  background-color: #db2777;
 }
 
+/* HERO IMAGE */
+.hero-image{
+  max-width: 100%;
+  width: 480px;
+}
 
-#btn:hover{
-    background-color: white;
+/* FEATURE CARD */
+.feature-card{
+  transition: 0.3s ease;
+}
+
+.feature-card:hover{
+  transform: translateY(-5px);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px){
+
+  .hero-section{
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .hero-title{
+    font-size: 2.2rem;
+  }
+
+  .hero-text{
+    font-size: 1rem;
+    margin: auto;
+  }
+
+  .hero-image{
+    width: 320px;
+  }
+
+  .navbar-brand{
+    font-size: 1.8rem !important;
+  }
+
 }
