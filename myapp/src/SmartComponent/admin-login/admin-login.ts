@@ -25,10 +25,10 @@ export class AdminLogin {
   constructor(private accountService: AccountService, private route: Router){}
 
   onLogin(){
-    debugger
+   // debugger
 
     this.accountService.onLogin(this.form.value).subscribe((res: any) => {
-      debugger
+     // debugger
       console.log('res', res)
       localStorage.setItem('token', res.token)
 

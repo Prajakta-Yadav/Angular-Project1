@@ -7,11 +7,13 @@ import { Observable } from 'rxjs';
 })
 export class AccountService {
 
-  constructor(private http: HttpClient){}
+  constructor(private http: HttpClient){} 
 
   onLogin(obj: any): Observable <any> {
     
-    return this.http.post('http://cispl.runasp.net/api/Auth/login', obj); 
+    // return this.http.post('http://cispl.runasp.net/api/Auth/login', obj); 
+
+    return this.http.post('http://localhost:8080/admin/login', obj); 
 
   }
   
